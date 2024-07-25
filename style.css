@@ -1,0 +1,98 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+#game-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #87CEEB;
+}
+
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#score, #lives {
+  position: absolute;
+  top: 10px;
+  font-size: 1.5em;
+  color: white;
+  z-index: 10;
+}
+
+#score {
+  left: 10px;
+}
+
+#lives {
+  right: 10px;
+}
+
+#game-area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#player {
+  width: 100px;  /* Adjust based on your image size */
+  height: 100px; /* Adjust based on your image size */
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.obstacle {
+  width: 150px;  /* Adjust based on your image size */
+  height: 150px; /* Adjust based on your image size */
+  position: absolute;
+  background-image: url('efa.jpg');
+  background-size: cover;
+}
+
+#mute-button, #pause-button {
+  position: absolute;
+  z-index: 100;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#mute-button {
+  top: 10px;
+  right: 100px;
+}
+
+#pause-button {
+  top: 10px;
+  right: 10px;
+}
